@@ -8,7 +8,6 @@ class Item
   end
 
   def add_bid(attendee, bid)
-    require "pry";binding.pry
-    @bids = 5
+    @bids[attendee] = bid
   end
 end
