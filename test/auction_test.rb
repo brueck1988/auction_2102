@@ -14,4 +14,15 @@ class AuctionTest < Minitest::Test
     auction = Auction.new
     assert_equal [], auction.items
   end
+
+  def test_add_item
+    auction = Auction.new
+    item1 = Item.new('Chalkware Piggy Bank')
+    item2 = Item.new('Bamboo Picture Frame')
+    attendee = Attendee.new(name: 'Megan', budget: '$50')
+    auction.add_item(item1)
+    auction.add_item(item2)
+
+    assert_equal [item1, item2], auction.items
+  end
 end
