@@ -26,7 +26,7 @@ class AuctionTest < Minitest::Test
     assert_equal [item1, item2], auction.items
   end
 
-  def test_add_bid
+  def test_unpopular items
     item1 = Item.new('Chalkware Piggy Bank')
     item2 = Item.new('Bamboo Picture Frame')
     item3 = Item.new('Homemade Chocolate Chip Cookies')

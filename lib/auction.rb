@@ -1,5 +1,6 @@
 class Auction
-  attr_reader :items
+  attr_reader :items,
+              :bids
 
   def initialize
     @items = []

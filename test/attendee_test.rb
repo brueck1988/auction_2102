@@ -15,10 +15,4 @@ class AttendeeTest < Minitest::Test
     assert_equal "Megan", attendee.name
     assert_equal 50, attendee.budget
   end
-
-  # def test_it_has_attributes
-  #   item1 = Item.new('Chalkware Piggy Bank')
-  #   item2 = Item.new('Bamboo Picture Frame')
-  #   assert_equal
-  # end
 end
