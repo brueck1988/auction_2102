@@ -6,6 +6,4 @@ class Attendee
     @name = info[:name]
     @budget = info[:budget][1..-1].to_i
   end
-
-
 end

@@ -24,4 +24,25 @@ class Auction
     end
     potential_revenue
   end
+
+  def bidders
+    bidders = []
+    @items.each do |item|
+      item.bids.each do |bid|
+          bidders << bid[0].name
+      end
+    end
+    bidders.uniq
+  end
+
+  def bidder_info
+    bidder_info = {}
+    bidders.each do |bidder|
+      item_hash = []
+      item_hash << 
+      @items[0].bids.each do |bid|
+        bidder_info[bidder] = {:budget => bid[0].budget, :items => item_hash}
+      end
+    end
+  end
 end

@@ -13,9 +13,5 @@ class Item
 
   def current_high_bid
     @bids.max_by{|key, value| value}[1]
-    # @bids.each do |bid|
-    #   require "pry";binding.pry
-    #   bid[1].max
-    # end
   end
 end

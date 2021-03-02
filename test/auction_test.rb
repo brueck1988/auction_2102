@@ -122,9 +122,9 @@ class AuctionTest < Minitest::Test
     item4.add_bid(attendee3, 50)
     item3.add_bid(attendee2, 15)
     expected = {
-                attendee1 => {:budget == 50, :items => [item_1]},
-                attendee2 => {:budget == 75, :items => [item_1, item_3]},
-                attendee3 => {:budget == 100, :items => [item_4]}
+                attendee1 => {:budget => 50, :items => [item1]},
+                attendee2 => {:budget => 75, :items => [item1, item3]},
+                attendee3 => {:budget => 100, :items => [item4]}
                 }
     assert_equal expected, auction.bidder_info
   end
